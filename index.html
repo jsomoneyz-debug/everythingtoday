@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EverythingToday</title>
+<style>
+body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f8f8f8; color:#333; }
+header, footer { background:#222; color:#fff; text-align:center; padding:20px; }
+main { display:flex; flex-wrap:wrap; justify-content:space-around; padding:20px; }
+.container { background:#fff; padding:20px; margin:10px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1); flex:1; min-width:300px; }
+h2 { color:#222; }
+button { padding:10px 20px; font-size:16px; margin:5px 0; cursor:pointer; background:#007BFF; color:#fff; border:none; border-radius:5px; }
+button:hover { background:#0056b3; }
+.article { margin-bottom:15px; }
+.ads { margin:20px 0; text-align:center; background:#eee; padding:10px; border-radius:5px; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>EverythingToday</h1>
+</header>
+
+<main>
+<!-- Left: AI Tech Tips -->
+<div class="container">
+<h2>💡 AI Tech Tips</h2>
+<button onclick="generateTip()">Generate Tech Tip</button>
+</div>
+
+<!-- Right: Viral Articles -->
+<div class="container">
+<h2>🔥 Viral Articles</h2>
+<div class="article">
+<strong>1. 5 Money Hacks Everyone Needs</strong>
+<p>Save more with simple lifestyle tricks…</p>
+</div>
+<div class="article">
+<strong>2. Morning Routines of Successful People</strong>
+<p>Boost productivity with these morning habits…</p>
+</div>
+<div class="article">
+<strong>3. Top 5 Free AI Tools for Beginners</strong>
+<p>Automate your tasks and save time…</p>
+</div>
+<div class="article">
+<strong>4. 10 Healthy Habits You Can Start Today</strong>
+<p>Easy lifestyle changes for better health…</p>
+</div>
+<div class="article">
+<strong>5. How to Save $500 in a Month</strong>
+<p>Practical tips anyone can follow…</p>
+</div>
+<div class="article">
+<strong>6. Must-Have Tech Gadgets in 2025</strong>
+<p>Upgrade your home and office setups…</p>
+</div>
+<div class="article">
+<strong>7. Best Productivity Apps for Students & Professionals</strong>
+<p>Organize your life like a pro…</p>
+</div>
+<div class="article">
+<strong>8. AI Tools That Replace Repetitive Tasks</strong>
+<p>Save hours every week with automation…</p>
+</div>
+<div class="article">
+<strong>9. Top 5 Side Hustles for 2025</strong>
+<p>Make extra income using tech & lifestyle tips…</p>
+</div>
+<div class="article">
+<strong>10. Fun Fact: History of the Internet</strong>
+<p>Learn surprising tech facts…</p>
+</div>
+</div>
+</main>
+
+<!-- Ads Example -->
+<div class="ads">
+<!-- Paste your Google AdSense code here -->
+Advertisement
+</div>
+
+<!-- Bottom Quizzes / Fun Facts -->
+<div class="container" style="margin:20px auto; max-width:600px;">
+<h2>🎯 Quizzes & Fun Facts</h2>
+<button onclick="alert('Answer: Plan your day the night before')">Quiz: Best productivity hack? Show Answer</button>
+<button onclick="alert('Answer: True!')">Fun Fact: Your brain uses ~20% of your energy. Show Answer</button>
+<button onclick="alert('Answer: Keep a consistent schedule')">Quiz: Fastest way to improve sleep? Show Answer</button>
+<button onclick="alert('Answer: ELIZA')">Fun Fact: First AI chatbot was in 1966. Show Answer</button>
+<button onclick="alert('Answer: ChatGPT free version')">Quiz: Best free AI tool for writing? Show Answer</button>
+</div>
+
+<footer>
+© 2025 EverythingToday | Follow us on social media
+</footer>
+
+<script>
+function generateTip() {
+const tips = [
+"Use keyboard shortcuts to save hours each week.",
+"Clean your laptop’s cache monthly for better performance.",
+"Learn to automate daily tasks using free AI tools.",
+"Use dark mode to reduce eye strain.",
+"Organize your files with cloud storage for easy access.",
+"Try open-source software to save money.",
+"Update your apps regularly to avoid security issues.",
+"Use a password manager for safer online accounts.",
+"Learn a new tech skill weekly using free online courses.",
+"Set up cloud backups to prevent data loss."
+];
+const tip = tips[Math.floor(Math.random() * tips.length)];
+alert("💡 Tech Tip: " + tip);
+}
+</script>
+
+</body>
+</html>
+
